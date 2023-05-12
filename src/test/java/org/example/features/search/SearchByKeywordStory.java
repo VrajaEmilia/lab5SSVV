@@ -40,13 +40,9 @@ public class SearchByKeywordStory {
     }
 
     @Test
-    public void searching_by_keyword_banana_should_display_the_corresponding_article() {
+    public void searching_by_keyword_Europe_should_display_the_corresponding_article() {
         anna.is_the_home_page();
-        anna.looks_for("pear");
-        anna.should_see_definition("An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.");
-    }
-
-    @Pending @Test
-    public void searching_by_ambiguious_keyword_should_display_the_disambiguation_page() {
+        anna.looks_for("Europe");
+        anna.should_see_definition("The portion of Eurasia west of the Urals, traditionally considered a continent in its own right, located north of Africa, west of Asia and east of the Atlantic Ocean.");
     }
 } 
